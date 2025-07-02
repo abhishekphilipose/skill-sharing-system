@@ -1,0 +1,21 @@
+{% include 'adminheader.html' %}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h4>Upload Certificate</h4>
+        </div>
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Select Certificate File</label>
+                    <input type="file" name="certificate" class="form-control" required accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+                <br>
+                <input type="submit" name="submit" value="Upload" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}

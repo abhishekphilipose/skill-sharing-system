@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Dashboard | Hando - Responsive Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Zoyothemes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/static/admin/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="/static/admin/css/app.min.css" rel="stylesheet" type="text/css" id="app-style">
+
+    <!-- Icons -->
+    <link href="/static/admin/css/icons.min.css" rel="stylesheet" type="text/css">
+
+    <script src="/static/admin/js/head.js"></script>
+
+
+</head>
+
+<!-- body start -->
+
+<body data-menu-color="light" data-sidebar="default">
+
+    <!-- Begin page -->
+    <div id="app-layout">
+
+
+        <!-- Topbar Start -->
+        <div class="topbar-custom">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between">
+                    <ul class="list-unstyled topnav-menu mb-0 d-flex align-items-center">
+                        <li>
+                            <button class="button-toggle-menu nav-link">
+                                <i data-feather="menu" class="noti-icon"></i>
+                            </button>
+                        </li>
+                        <li class="d-none d-lg-block">
+                            <h5 class="mb-0">AdminHome</h5>
+                        </li>
+                    </ul>
+
+                    <ul class="list-unstyled topnav-menu mb-0 d-flex align-items-center">
+                        <!-- <li class="d-none d-lg-block">
+                            <form class="app-search d-none d-md-block me-auto">
+                                <div class="position-relative topbar-search">
+                                    <input type="text" class="form-control ps-4" placeholder="Search...">
+                                    <i class="mdi mdi-magnify fs-16 position-absolute text-muted top-50 translate-middle-y ms-2"></i>
+                                </div>
+                            </form>
+                        </li> -->
+
+                        <!-- Button Trigger Customizer Offcanvas -->
+
+
+                        <!-- Light/Dark Mode Button Themes -->
+                        <li class="d-none d-sm-flex">
+                            <button type="button" class="btn nav-link" id="light-dark-mode">
+                                <i data-feather="moon" class="align-middle dark-mode"></i>
+                                <i data-feather="sun" class="align-middle light-mode"></i>
+                            </button>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end Topbar -->
+
+        <!-- Left Sidebar Start -->
+        <div class="app-sidebar-menu">
+            <div class="h-100" data-simplebar="">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <div class="logo-box">
+                        <a href="/adminindex" class="logo-link">
+                            <span class="logo-text">
+                                <span class="logo-name">SKILL</span>
+                                <span class="logo-highlight">SHARE</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <style>
+                        .logo-box {
+                            padding: 20px 15px;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                        }
+
+                        .logo-link {
+                            text-decoration: none;
+                            display: block;
+                            text-align: center;
+                        }
+
+                        .logo-text {
+                            font-size: 24px;
+                            font-weight: 700;
+                            font-family: 'Poppins', sans-serif;
+                            letter-spacing: 1px;
+                        }
+
+                        .logo-symbol {
+                            color: #e74c3c;
+                            font-weight: 300;
+                            margin: 0 2px;
+                            opacity: 0.9;
+                        }
+
+                        .logo-name {
+                            color: #0cceff;
+                        }
+
+                        .logo-highlight {
+                            color: #3498db;
+                            font-weight: 800;
+                            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+                        }
+
+                        .logo-box:hover .logo-symbol {
+                            color: #f1c40f;
+                            transition: all 0.3s ease;
+                        }
+                    </style>
+
+                    <div class="clearfix"></div>
+
+                    <ul id="side-menu">
+                        <li class="menu-title mt-2">Home</li>
+                        <li>
+                            <a class="tp-link" href="/adminhome">
+                                <i data-feather="book-open"></i>
+                                <span> Home </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tp-link" href="/admin_addskills">
+                                <i data-feather="book-open"></i>
+                                <span> Skill </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tp-link" href="/admin_managebadge">
+                                <i data-feather="award"></i>
+                                <span> Badge / Achieve </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tp-link" href="/admin_viewusers">
+                                <i data-feather="users"></i>
+                                <span>Users</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tp-link" href="/admin_requests">
+                                <i data-feather="inbox"></i>
+                                <span>Requests</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tp-link" href="/viewcomplaint">
+                                <i data-feather="alert-circle"></i>
+                                <span>Complaint</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tp-link" href="/">
+                                <i data-feather="log-out"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+                <!-- End Sidebar -->
+
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+<div class="content-page">
+    <div class="content">
+        <div class="container-fluid">
+            <!-- Page Header -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="page-title-box">
+                        <h4 class="page-title">Request Management</h4>
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="/adminhome">Home</a></li>
+                                <li class="breadcrumb-item active">Requests</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Box -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="search-box">
+                                        <input type="text" id="searchInput" class="form-control" placeholder="Search requests...">
+                                        <i class="fe-search search-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Requests Table -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped" id="requests-table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Request ID</th>
+                                            <th>User</th>
+                                            <th>Skill</th>
+                                            <th>Badge</th>
+                                            <th>Amount</th>
+                                            <th>Details</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for req in data['requests'] %}
+                                        <tr>
+                                            <td>{{ req['request_id'] }}</td>
+                                            <td>{{ req['ufname'] }} {{ req['ulname'] }}</td>
+                                            <td>{{ req['skills'] }}</td>
+                                            <td>{{ req['badgeorachive'] }}</td>
+                                            <td>₹{{ req['amount'] }}</td>
+                                            <td>{{ req['details'] }}</td>
+                                            <td>{{ req['date'] }}</td>
+                                            <td>
+                                                <button type="button" 
+                                                        class="btn btn-sm {{ 'btn-success' if req['status']=='paid' else 'btn-warning' }}"
+                                                        style="min-width: 80px; font-weight: 500;">
+                                                    {{ req['status'] }}
+                                                </button>
+                                            </td>
+                                            <td>
+                                                {% if req['status'] == 'Completed' %}
+                                            
+                                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal{{req['request_id']}}">
+                                                    Upload Certificate
+                                                </button>
+                                                <a href="{{url_for('admin.view_certificate', request_id=req['request_id'])}}" class="btn btn-info btn-sm">View Certificate</a>
+                                                <!-- Certificate Modal -->
+                                                <div class="modal fade" id="certModal{{req['request_id']}}" tabindex="-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Upload Certificate</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                            </div>
+                                                            <form action="{{url_for('admin.upload_certificate')}}" method="post" enctype="multipart/form-data">
+                                                                <div class="modal-body">
+                                                                    <input type="hidden" name="request_id" value="{{req['request_id']}}">
+                                                                    <div class="mb-3">
+                                                                        <label class="form-label">Certificate Name</label>
+                                                                        <input type="text" name="name" class="form-control" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label class="form-label">Course</label>
+                                                                        <input type="text" name="course" class="form-control" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label class="form-label">Date</label>
+                                                                        <input type="date" name="date" class="form-control" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label class="form-label">Certificate File</label>
+                                                                        <input type="file" name="certificate" class="form-control" required>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="submit" class="btn btn-primary">Upload</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {% endif %}
+                                                
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <style>
+                        .custom-table {
+                            border-radius: 8px;
+                            overflow: hidden;
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+                        }
+
+                        .custom-table thead th {
+                            background-color: #f8f9fa;
+                            border-bottom: 2px solid #dee2e6;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-size: 0.875rem;
+                        }
+
+                        .custom-table tbody tr:hover {
+                            background-color: #f8f9fa;
+                            transform: scale(1.01);
+                            transition: all 0.2s;
+                        }
+
+                        .skill-icon {
+                            width: 32px;
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            background-color: #e3f2fd;
+                        }
+
+                        .page-title-box {
+                            padding: 20px;
+                            background-color: #fff;
+                            border-radius: 8px;
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+                            margin-bottom: 24px;
+                        }
+
+                        .breadcrumb-item+.breadcrumb-item::before {
+                            color: #6c757d;
+                        }
+
+                        .btn-success {
+        background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+        border: none;
+        color: white;
+    }
+    
+    .btn-warning {
+        background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+        border: none;
+        color: #000;
+    }
+    
+    .btn-success:hover, .btn-warning:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+                    </style>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END wrapper -->
+
+    <!-- Vendor -->
+    <script src="/static/admin/js/jquery.min.js"></script>
+    <script src="/static/admin/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/admin/js/simplebar.min.js"></script>
+    <script src="/static/admin/js/feather.min.js"></script>
+    <script src="/static/admin/js/app.js"></script>
+
+    <!-- Initialize tooltips -->
+    <script>
+    $(document).ready(function() {
+        // Search functionality
+        $("#searchInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#requests-table tbody tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+
+        // Initialize Feather icons
+        feather.replace();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+{% include 'staffheader.html'%}
+<style>
+    table {
+/*        color: white;
+*/        margin: auto;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+
+    input[type="text"] {
+        padding: 8px;
+        width: 100%;
+        background-color: transparent; /* Set background color to transparent */
+        box-sizing: border-box;
+    }
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 2000px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#3380cc;
+  color: white;
+}
+ 
+</style>
+  <!-- ======= Hero Section ======= -->
+   <section id="hero" class="hero" style="height:400px">
+
+
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(static/assets/img/hero-carousel/img76.jpg);height:auto"><br><br><br><br><br><br>
+                  </div>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+  <h2 data-aos="fade-down" align="center" style="font-size:50px;color:black"><span>Class Notes</span></h2>
+<form method='post' enctype="multipart/form-data">
+        <table class="table" style="width: 600px">
+
+            <tr>
+                <th>Notes</th>
+                <td><input type="file" name="upload" required="" class="form-control"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"><input class="btn btn-success" type="submit" name="submit" value="Submit"></td>
+            </tr>
+        </table>
+        <table class="table" >
+            <tr>
+                <th>Notes</th>
+                <th>Date</th>
+            </tr>
+            {% for i in data['view'] %}
+            <tr>
+                <td><a class="btn btn-warning" href="/{{i['notes']}}">View notes</a></td>
+                <td>{{i['date']}}</td>
+                <td><a class="btn btn-danger" href="?action=delete&uid={{i['notes_id']}}">delete</a></td>
+
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+</center>
+{% include 'footer.html' %}

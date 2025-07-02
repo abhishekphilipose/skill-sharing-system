@@ -1,0 +1,65 @@
+{%include 'publicheader.html'%}
+<style>
+    table {
+        color: white;
+        width: 500px;
+        border-collapse: collapse;
+        margin: auto;
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid white; /* Add border for better visibility */
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin: 4px 0;
+        box-sizing: border-box;
+        background-color:   #B2BEB5; 
+        border: 1px solid white; /* Add border for better visibility */
+        color: white;
+    }
+
+   
+</style>
+
+  <section id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg" style="background-image: url(static/assets/img/hero-carousel/img2.jpg);" data-aos="zoom-in" data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3 style="font-family: ui-serif;">Login</h3>
+            <p>    <form method="post">
+        <table style=" width:500px;font-family: ui-serif;font-size:20px" class="table" align="center">
+
+            <tr>
+                <th>Username</th>
+                <td><input type="text" required="" name="uname" class="form-control"></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td><input type="password" required="" name="pwd" class="form-control"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit" name="sub" value="Login" class="btn btn-success"></td>
+            </tr>
+            
+        </table>
+    </form></p>
+
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section -->
+
+
+        
+       
+
+{%include 'footer.html'%}

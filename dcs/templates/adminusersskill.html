@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Dashboard | Hando - Responsive Admin Dashboard Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+  <meta name="author" content="Zoyothemes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="/static/admin/images/favicon.ico">
+
+  <!-- App css -->
+  <link href="/static/admin/css/app.min.css" rel="stylesheet" type="text/css" id="app-style">
+
+  <!-- Icons -->
+  <link href="/static/admin/css/icons.min.css" rel="stylesheet" type="text/css">
+
+  <script src="/static/admin/js/head.js"></script>
+
+
+</head>
+
+<!-- body start -->
+
+<body data-menu-color="light" data-sidebar="default">
+
+  <!-- Begin page -->
+  <div id="app-layout">
+
+
+    <!-- Topbar Start -->
+    <div class="topbar-custom">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <ul class="list-unstyled topnav-menu mb-0 d-flex align-items-center">
+            <li>
+              <button class="button-toggle-menu nav-link">
+                <i data-feather="menu" class="noti-icon"></i>
+              </button>
+            </li>
+            <li class="d-none d-lg-block">
+              <h5 class="mb-0">AdminHome</h5>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled topnav-menu mb-0 d-flex align-items-center">
+            <!-- <li class="d-none d-lg-block">
+                            <form class="app-search d-none d-md-block me-auto">
+                                <div class="position-relative topbar-search">
+                                    <input type="text" class="form-control ps-4" placeholder="Search...">
+                                    <i class="mdi mdi-magnify fs-16 position-absolute text-muted top-50 translate-middle-y ms-2"></i>
+                                </div>
+                            </form>
+                        </li> -->
+
+            <!-- Button Trigger Customizer Offcanvas -->
+
+
+            <!-- Light/Dark Mode Button Themes -->
+            <li class="d-none d-sm-flex">
+              <button type="button" class="btn nav-link" id="light-dark-mode">
+                <i data-feather="moon" class="align-middle dark-mode"></i>
+                <i data-feather="sun" class="align-middle light-mode"></i>
+              </button>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end Topbar -->
+
+    <!-- Left Sidebar Start -->
+    <div class="app-sidebar-menu">
+      <div class="h-100" data-simplebar="">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+          <div class="logo-box">
+            <a href="/adminindex" class="logo-link">
+              <span class="logo-text">
+                <span class="logo-name">SKILL</span>
+                <span class="logo-highlight">SHARE</span>
+              </span>
+            </a>
+          </div>
+
+          <style>
+            .logo-box {
+              padding: 20px 15px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .logo-link {
+              text-decoration: none;
+              display: block;
+              text-align: center;
+            }
+
+            .logo-text {
+              font-size: 24px;
+              font-weight: 700;
+              font-family: 'Poppins', sans-serif;
+              letter-spacing: 1px;
+            }
+
+            .logo-symbol {
+              color: #e74c3c;
+              font-weight: 300;
+              margin: 0 2px;
+              opacity: 0.9;
+            }
+
+            .logo-name {
+              color: #0cceff;
+            }
+
+            .logo-highlight {
+              color: #3498db;
+              font-weight: 800;
+              text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            }
+
+            .logo-box:hover .logo-symbol {
+              color: #f1c40f;
+              transition: all 0.3s ease;
+            }
+          </style>
+
+          <div class="clearfix"></div>
+
+          <ul id="side-menu">
+            <li class="menu-title mt-2">Home</li>
+            <li>
+              <a class="tp-link" href="/adminhome">
+                <i data-feather="book-open"></i>
+                <span> Home </span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/admin_addskills">
+                <i data-feather="book-open"></i>
+                <span> Skill </span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/admin_managebadge">
+                <i data-feather="award"></i>
+                <span> Badge / Achieve </span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/admin_viewusers">
+                <i data-feather="users"></i>
+                <span>Users</span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/admin_requests">
+                <i data-feather="inbox"></i>
+                <span>Requests</span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/viewcomplaint">
+                <i data-feather="alert-circle"></i>
+                <span>Complaint</span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/">
+                <i data-feather="log-out"></i>
+                <span>Logout</span>
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-page">
+      <div class="content">
+        <div class="container-fluid">
+
+          <!-- Page Title -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <div class="page-title-box">
+                <h4 class="page-title">User Skills Overview</h4>
+                <div class="page-title-right">
+                  <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="/admin_viewusers">Back to Users</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Cards Grid -->
+          <div class="row">
+            {% for i in data['myskillview'] %}
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="user-skill-card">
+                <div class="user-info">
+                  <div class="user-avatar-lg">{{i['ufname'][0]}}{{i['ulname'][0]}}</div>
+                  <h5 class="user-name">{{i['ufname']}} {{i['ulname']}}</h5>
+                  <div class="user-details">
+                    <div class="detail-item">
+                      <i data-feather="map-pin" class="detail-icon"></i>
+                      <span>{{i['place']}}</span>
+                    </div>
+                    <div class="detail-item">
+                      <i data-feather="phone" class="detail-icon"></i>
+                      <span>{{i['phone']}}</span>
+                    </div>
+                    <div class="detail-item">
+                      <i data-feather="mail" class="detail-icon"></i>
+                      <span>{{i['email']}}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-section">
+                  <h6 class="skills-title">Skills</h6>
+                  <div class="skills-container">
+                    {% for skill in i['skills'].split(',') %}
+                    <span class="skill-badge">{{skill.strip()}}</span>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .content-page {
+        margin-left: 240px;
+        padding: 70px 12px 65px;
+        min-height: 100vh;
+        background: #f3f4f6;
+      }
+
+      .user-skill-card {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        height: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .user-info {
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .user-avatar-lg {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0 auto 15px;
+        box-shadow: 0 4px 6px rgba(99, 102, 241, 0.2);
+      }
+
+      .user-details {
+        margin-top: 15px;
+      }
+
+      .detail-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 8px;
+        color: #4b5563;
+        font-size: 0.9rem;
+      }
+
+      .detail-icon {
+        width: 16px;
+        height: 16px;
+        stroke: #6366f1;
+      }
+
+      .skills-section {
+        padding-top: 15px;
+      }
+
+      .skills-title {
+        color: #4b5563;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .skill-badge {
+        background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+        color: white;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        box-shadow: 0 2px 4px rgba(14,165,233,0.2);
+        transition: all 0.2s ease;
+      }
+
+      .skill-badge:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(14,165,233,0.3);
+      }
+
+      @media (max-width: 768px) {
+        .content-page {
+          margin-left: 0;
+        }
+      }
+    </style>
+
+  </div>
+  <!-- END wrapper -->
+
+  <!-- Vendor -->
+  <script src="/static/admin/js/jquery.min.js"></script>
+  <script src="/static/admin/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/admin/js/simplebar.min.js"></script>
+  <script src="/static/admin/js/feather.min.js"></script>
+  <script src="/static/admin/js/app.js"></script>
+
+  <!-- Initialize tooltips -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize tooltips
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      });
+
+      // Initialize Feather icons
+      feather.replace();
+    });
+  </script>
+
+  <!-- Add SweetAlert2 library -->
+  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4/bootstrap-4.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Delete confirmation handling
+      document.querySelectorAll('.delete-badge').forEach(button => {
+        button.addEventListener('click', function () {
+          const id = this.dataset.id;
+          const name = this.dataset.name;
+
+          Swal.fire({
+            title: 'Delete Badge/Achievement?',
+            html: `Are you sure you want to delete <b>${name}</b>?<br>This action cannot be undone.`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#ef476f',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'Cancel',
+            reverseButtons: true
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = `?action=delete&cid=${id}`;
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

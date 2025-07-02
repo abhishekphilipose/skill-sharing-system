@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Dashboard | Hando - Responsive Admin Dashboard Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+  <meta name="author" content="Zoyothemes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="/static/admin/images/favicon.ico">
+
+  <!-- App css -->
+  <link href="/static/admin/css/app.min.css" rel="stylesheet" type="text/css" id="app-style">
+
+  <!-- Icons -->
+  <link href="/static/admin/css/icons.min.css" rel="stylesheet" type="text/css">
+
+  <script src="/static/admin/js/head.js"></script>
+
+
+</head>
+
+<!-- body start -->
+
+<body data-menu-color="light" data-sidebar="default">
+
+  <!-- Begin page -->
+  <div id="app-layout">
+
+
+    <!-- Topbar Start -->
+    <div class="topbar-custom">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <ul class="list-unstyled topnav-menu mb-0 d-flex align-items-center">
+            <li>
+              <button class="button-toggle-menu nav-link">
+                <i data-feather="menu" class="noti-icon"></i>
+              </button>
+            </li>
+            <li class="d-none d-lg-block">
+              <h5 class="mb-0">AdminHome</h5>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled topnav-menu mb-0 d-flex align-items-center">
+            <!-- <li class="d-none d-lg-block">
+                            <form class="app-search d-none d-md-block me-auto">
+                                <div class="position-relative topbar-search">
+                                    <input type="text" class="form-control ps-4" placeholder="Search...">
+                                    <i class="mdi mdi-magnify fs-16 position-absolute text-muted top-50 translate-middle-y ms-2"></i>
+                                </div>
+                            </form>
+                        </li> -->
+
+            <!-- Button Trigger Customizer Offcanvas -->
+
+
+            <!-- Light/Dark Mode Button Themes -->
+            <li class="d-none d-sm-flex">
+              <button type="button" class="btn nav-link" id="light-dark-mode">
+                <i data-feather="moon" class="align-middle dark-mode"></i>
+                <i data-feather="sun" class="align-middle light-mode"></i>
+              </button>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end Topbar -->
+
+    <!-- Left Sidebar Start -->
+    <div class="app-sidebar-menu">
+      <div class="h-100" data-simplebar="">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+          <div class="logo-box">
+            <a href="/adminindex" class="logo-link">
+              <span class="logo-text">
+                <span class="logo-name">SKILL</span>
+                <span class="logo-highlight">SHARE</span>
+              </span>
+            </a>
+          </div>
+
+          <style>
+            .logo-box {
+              padding: 20px 15px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .logo-link {
+              text-decoration: none;
+              display: block;
+              text-align: center;
+            }
+
+            .logo-text {
+              font-size: 24px;
+              font-weight: 700;
+              font-family: 'Poppins', sans-serif;
+              letter-spacing: 1px;
+            }
+
+            .logo-symbol {
+              color: #e74c3c;
+              font-weight: 300;
+              margin: 0 2px;
+              opacity: 0.9;
+            }
+
+            .logo-name {
+              color: #0cceff;
+            }
+
+            .logo-highlight {
+              color: #3498db;
+              font-weight: 800;
+              text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            }
+
+            .logo-box:hover .logo-symbol {
+              color: #f1c40f;
+              transition: all 0.3s ease;
+            }
+          </style>
+
+          <div class="clearfix"></div>
+
+          <ul id="side-menu">
+            <li class="menu-title mt-2">Home</li>
+            <li>
+              <a class="tp-link" href="/adminhome">
+                <i data-feather="book-open"></i>
+                <span> Home </span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/admin_addskills">
+                <i data-feather="book-open"></i>
+                <span> Skill </span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/admin_managebadge">
+                <i data-feather="award"></i>
+                <span> Badge / Achieve </span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/admin_viewusers">
+                <i data-feather="users"></i>
+                <span>Users</span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/admin_requests">
+                <i data-feather="inbox"></i>
+                <span>Requests</span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/viewcomplaint">
+                <i data-feather="alert-circle"></i>
+                <span>Complaint</span>
+              </a>
+            </li>
+            <li>
+              <a class="tp-link" href="/">
+                <i data-feather="log-out"></i>
+                <span>Logout</span>
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="clearfix"></div>
+
+      </div>
+    </div>
+    <div class="content-page">
+      <div class="content">
+        <div class="container-fluid">
+          <!-- Page Header -->
+          <div class="row mb-4">
+            <div class="col-12">
+              <div class="page-title-box">
+                <h4 class="page-title">Badge & Achievement Management</h4>
+                <div class="page-title-right">
+                  <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="/adminhome">Home</a></li>
+                    <li class="breadcrumb-item active">Badges & Achievements</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Card -->
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <form method="post" enctype="multipart/form-data">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6">
+                        <div class="p-4 border rounded bg-light">
+                          {% if data['catupdate'] %}
+                          <div class="mb-3">
+                            <label class="form-label fw-bold text-primary">Update Badge/Achievement
+                            </label>
+                            <div class="input-group input-group-lg">
+                              <span class="input-group-text bg-primary text-white">
+                                <i data-feather="award"></i>
+                              </span>
+                              <input type="text" class="form-control shadow-none" name="category"
+                                value="{{data['catupdate'][0]['badgeorachive']}}" required pattern="[A-Za-z]{1,32}"
+                                title="Only letters allowed (max 32 characters)">
+                            </div>
+                            <button type="submit" name="sub1" class="btn btn-primary mt-3 w-100 btn-lg">
+                              <i data-feather="check-circle" class="icon-xs me-1"></i> Update
+                            </button>
+                          </div>
+                          {% else %}
+                          <div class="mb-3">
+                            <label class="form-label fw-bold text-success">Add New Badge/Achievement
+                            </label>
+                            <div class="input-group input-group-lg">
+                              <span class="input-group-text bg-success text-white">
+                                <i data-feather="plus-circle"></i>
+                              </span>
+                              <input type="text" class="form-control shadow-none" name="category"
+                                placeholder="Enter badge or achievement name" required pattern="[A-Za-z]{1,32}"
+                                title="Only letters allowed (max 32 characters)">
+                            </div>
+                            <button type="submit" name="sub" class="btn btn-success mt-3 w-100 btn-lg">
+                              <i data-feather="plus" class="icon-xs me-1"></i> Add New
+                            </button>
+                          </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Table Card -->
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title mb-4">Manage Badges & Achievements</h5>
+                  <div class="table-responsive">
+                    <table class="table table-centered table-hover custom-table">
+                      <thead class="table-light">
+                        <tr>
+                          <th class="text-center" style="width: 10%">#</th>
+                          <th>Badge/Achievement Name</th>
+                          <th class="text-end" style="width: 20%">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in data['catview'] %}
+                        <tr>
+                          <td class="text-center fw-bold">{{loop.index}}</td>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <div class="badge-icon me-3">
+                                <i data-feather="award" class="text-primary"></i>
+                              </div>
+                              <span class="fw-medium">{{i['badgeorachive']}}</span>
+                            </div>
+                          </td>
+                          <td class="text-end">
+                            <div class="action-buttons d-inline-flex gap-2">
+                              <a href="?action=update&cid={{i['badgeorchive_id']}}"
+                                class="btn btn-soft-info btn-sm action-btn" data-bs-toggle="tooltip"
+                                title="Edit Badge/Achievement">
+                                <i data-feather="edit-2" class="icon-xs"></i>
+                              </a>
+                              <button type="button" class="btn btn-soft-danger btn-sm action-btn delete-badge"
+                                data-id="{{i['badgeorchive_id']}}" data-name="{{i['badgeorachive']}}"
+                                data-bs-toggle="tooltip" title="Delete Badge/Achievement">
+                                <i data-feather="trash-2" class="icon-xs"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <style>
+            .custom-table {
+              border-radius: 8px;
+              overflow: hidden;
+            }
+
+            .badge-icon {
+              width: 32px;
+              height: 32px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              background-color: #e3f2fd;
+            }
+
+            .custom-table tbody tr {
+              transition: all 0.2s ease;
+            }
+
+            .custom-table tbody tr:hover {
+              background-color: #f8f9fa;
+              transform: translateY(-2px);
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            }
+
+            .page-title-box {
+              background-color: #fff;
+              border-radius: 8px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+              margin-bottom: 24px;
+              padding: 20px;
+            }
+
+            .action-buttons .action-btn {
+              padding: 0.4rem;
+              border-radius: 6px;
+              transition: all 0.2s;
+            }
+
+            .btn-soft-info {
+              background-color: rgba(3, 142, 220, 0.15);
+              color: #038edc;
+              border: none;
+            }
+
+            .btn-soft-danger {
+              background-color: rgba(239, 71, 111, 0.15);
+              color: #ef476f;
+              border: none;
+            }
+
+            .action-btn:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .btn-soft-info:hover {
+              background-color: #038edc;
+              color: #fff;
+            }
+
+            .btn-soft-danger:hover {
+              background-color: #ef476f;
+              color: #fff;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- END wrapper -->
+
+  <!-- Vendor -->
+  <script src="/static/admin/js/jquery.min.js"></script>
+  <script src="/static/admin/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/admin/js/simplebar.min.js"></script>
+  <script src="/static/admin/js/feather.min.js"></script>
+  <script src="/static/admin/js/app.js"></script>
+
+  <!-- Initialize tooltips -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize tooltips
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      });
+
+      // Initialize Feather icons
+      feather.replace();
+    });
+  </script>
+
+  <!-- Add SweetAlert2 library -->
+  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4/bootstrap-4.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Delete confirmation handling
+      document.querySelectorAll('.delete-badge').forEach(button => {
+        button.addEventListener('click', function () {
+          const id = this.dataset.id;
+          const name = this.dataset.name;
+
+          Swal.fire({
+            title: 'Delete Badge/Achievement?',
+            html: `Are you sure you want to delete <b>${name}</b>?<br>This action cannot be undone.`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#ef476f',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'Cancel',
+            reverseButtons: true
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = `?action=delete&cid=${id}`;
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
